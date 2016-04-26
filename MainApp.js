@@ -46,11 +46,11 @@ export default class MainApp extends React.Component {
             <Scene key="modal" component={Modal} >
                 <Scene key="root"  hideNavBar={true} >   
                     <Scene key="launch" component={Launch} title="Launch" initial={true}  />
-                    <Scene key="register" hideNavBar={false}  component={Register} title="Register"/>
+                    <Scene key="register" component={Register} title="Register"/>
                     <Scene key="register2" component={Register} title="Register2" duration={1}/>
                     <Scene key="login" direction="vertical"  >
                         <Scene key="loginModal" component={Login} title="Login" backTitle="back" duration={100}/>
-                        <Scene key="loginModal2" hideNavBar={true} component={Login2} title="Login2" panHandlers={null} duration={100}/>
+                        <Scene key="loginModal2"  component={Login2} title="Login2" panHandlers={null} duration={100}/>
                     </Scene>
                 </Scene>
                 <Scene key="error" component={Error}/>
